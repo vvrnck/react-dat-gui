@@ -48,6 +48,8 @@ export class DatChangableFieldProps extends DatUnchangableFieldProps {
 
 export interface DatButtonProps extends DatUnchangableFieldProps {
   onClick: (e: React.MouseEvent) => any;
+  className?: string;
+  style?: React.CSSProperties;
 }
 
 export class DatButton extends React.Component<DatButtonProps, any> {}

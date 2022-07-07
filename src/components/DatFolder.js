@@ -32,7 +32,7 @@ export default class DatFolder extends Component {
     const { children, title, ...rest } = this.props;
 
     return React.Children.map(children, child =>
-      cloneElement(child, { ...rest })
+      cloneElement(child, { ...rest, className: child.props.className })
     );
   }
 

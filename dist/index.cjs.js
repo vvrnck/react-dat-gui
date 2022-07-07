@@ -620,7 +620,9 @@ var DatFolder = /*#__PURE__*/function (_Component) {
           var rest = _objectWithoutProperties__default['default'](_this$props, ["children", "title"]);
 
       return React__default['default'].Children.map(children, function (child) {
-        return /*#__PURE__*/React.cloneElement(child, _objectSpread$1({}, rest));
+        return /*#__PURE__*/React.cloneElement(child, _objectSpread$1(_objectSpread$1({}, rest), {}, {
+          className: child.props.className
+        }));
       });
     }
   }, {
