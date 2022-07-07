@@ -594,7 +594,9 @@ var DatFolder = /*#__PURE__*/function (_Component) {
           var rest = _objectWithoutProperties(_this$props, ["children", "title"]);
 
       return React.Children.map(children, function (child) {
-        return /*#__PURE__*/cloneElement(child, _objectSpread$1({}, rest));
+        return /*#__PURE__*/cloneElement(child, _objectSpread$1(_objectSpread$1({}, rest), {}, {
+          className: child.props.className
+        }));
       });
     }
   }, {
