@@ -56,6 +56,8 @@ export interface DatFolderProps extends DatUnchangableFieldProps {
   title: string;
   closed: boolean;
   children: any;
+  className?: string;
+  style?: React.CSSProperties;
 }
 
 export class DatFolder extends React.Component<DatFolderProps, any> {}
